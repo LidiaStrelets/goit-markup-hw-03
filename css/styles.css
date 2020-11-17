@@ -1,0 +1,238 @@
+:root {
+  --headers-color: #212121;
+  --accent-color: #2196f3;
+  --text-color: #757575;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --bgc: #2f303a;
+  --button-bcg-color: #f5f4fa;
+  --footer-address-color: rgba(255, 255, 255, 0.6);
+}
+/*общие стили*/
+body {
+  color: var(--text-color);
+  background-color: var(--white-color);
+  letter-spacing: 0.03em;
+  font-family: roboto, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /*outline: 2px solid red;*/
+  margin: 0 auto;
+}
+.section-padding {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.list {
+  margin: 0;
+}
+/*общие стили*/
+/*логотип*/
+.logo {
+  display: inline-block;
+  color: var(--black-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.accent {
+  color: var(--accent-color);
+}
+footer > .logo {
+  color: var(--white-color);
+}
+/*логотип*/
+/*шапка*/
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+.nav-link {
+  color: var(--headers-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-link.current {
+  color: var(--accent-color);
+}
+
+.contakts {
+  color: inherit;
+}
+.contakts:hover,
+.contakts:focus {
+  color: var(--accent-color);
+}
+/*шапка*/
+/*hero*/
+.hero {
+  background-color: var(--bgc);
+  color: var(--white-color);
+  letter-spacing: 0.06em;
+  min-height: 600px;
+  text-align: center;
+}
+.hero h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  padding-top: 200px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.hero a {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  color: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  background-color: var(--accent-color);
+}
+/*ховер и фокус не понятно, какими должны быть, но поскольку это кнопка или ссылка они должны быть*/
+.hero > a:hover,
+.hero > a:focus {
+  background-color: var(--text-color);
+}
+
+/*hero*/
+/*features*/
+.features-items {
+  color: var(--headers-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.features-items + p {
+  font-size: 14px;
+  line-height: 1.71;
+  margin: 0;
+  width: 270px;
+}
+.features-header {
+  margin: 0;
+}
+/*features*/
+
+/*occupations, team*/
+.occupations,
+.team {
+  color: var(--headers-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.ourteam {
+  background-color: var(--button-bcg-color);
+}
+.team-description {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-name {
+  color: var(--headers-color);
+  font-weight: 500;
+  font-size: inherit;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.occupations {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.team-description > p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+}
+/*occupations, team*/
+/*футер*/
+footer {
+  background-color: var(--bgc);
+  padding-bottom: 60px;
+  padding-left: 215px;
+}
+.footer > p {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--white-color);
+  margin: 0;
+}
+.footer > a {
+  color: var(--footer-address-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+footer > .logo {
+  padding-top: 60px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+.contakts.mail {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+/*футер*/
+/*portfolio*/
+.filter {
+  display: inline-block;
+  color: var(--headers-color);
+  background-color: var(--button-bcg-color);
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+.filter:hover,
+.filter:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.portfolio-item {
+  color: var(--headers-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+.portfolio-example {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.portfolio-header {
+  margin: 0;
+}
+.filter-collection {
+  padding-top: 94px;
+  margin-bottom: 34px;
+}
+/*portfolio*/
