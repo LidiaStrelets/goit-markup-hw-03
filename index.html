@@ -14,31 +14,36 @@
 <body>
     <!-- -->
     <header> 
-        <div class="container">
+        <div class="container header">
             <a class="logo" href=""><span class="accent">Web</span> Studio</a>
         <nav>
-            <ul>
-                <li><a class="nav-link current" href="">Студия</a></li>
-                <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="nav-link" href="">Контакты</a></li>
+            <ul class="nav-list list">
+                <li class="nav-item"><a class="nav-link current" href="">Студия</a></li>
+                <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Контакты</a></li>
             </ul>
         </nav>
+    <div class="box">
         <a class="contakts" href="mailto:info@example.com">info@example.com</a>
-        <a class="contakts" href="tel:+380991111111">+38 099 111 11 11</a></div>
+        <a class="contakts" href="tel:+380991111111">+38 099 111 11 11</a>
+    </div>    
+    </div>
     </header> 
     <main>
         <!--Герой-->
         <section class="hero">
-            <div class="container"><h1>Эффективные решения для вашего бизнеса</h1>
-            <a href="">Заказать услугу</a></div>
+            <div class="container">
+                <h1>Эффективные решения для вашего бизнеса</h1>
+            <a href="">Заказать услугу</a>
+        </div>
         </section>
         
         <!--Особенности-->
         <section class="section-padding">
             <div class="container">
-                <h2 class="features-header">Особенности</h2>
-                <!--Этот заголовок нужно спрятать-->
-                <ul class="list">
+                <h2 class="features-header visually-hidden">Особенности</h2>
+                
+                <ul class="list featuresbox">
                     <li>
                         <h3 class="features-items">Внимание к деталям</h3>
                         <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -59,10 +64,10 @@
             </div>
         </section>
         <!--Чем мы занимаемся-->
-        <section class="section-padding">
+        <section class="section-padding wedo">
             <div class="container">
                 <h2 class="occupations">Чем мы занимаемся</h2>
-                <ul class="list">
+                <ul class="list wedo">
                     <li><img width="370" src="./images/occupations/occupations1.png" alt="Кодинг"></li>
                     <li><img width="370" src="./images/occupations/occupations2.png" alt="Работа со смартфонами"></li>
                     <li><img width="370" src="./images/occupations/occupations3.png" alt="Работа с цветовой палитрой"></li>
@@ -73,7 +78,7 @@
         <section class="ourteam section-padding">
             <div class="container">
                 <h2 class="team">Наша команда</h2>
-                <ul>
+                <ul class="team-list list">
                     <li>
                         <article class="team-description">
                             <img width="270" src="./images/team-photos/team1.jpg" alt="Фото Игоря Демьяненко">
@@ -107,13 +112,14 @@
         </section>
     </main>
     <footer>
-        <a class="logo" href=""><span class="accent">Web</span> Studio</a>
-        <address class="footer">
-            <p>г. Киев, пр-т Леси Украинки, 26</p>
-            <a class="contakts mail" href="mailto:info@example.com">info@example.com</a>
-        <br/>
-            <a class="contakts" href="tel:+380991111111">+38 099 111 11 11</a>
-        </address>
+       <div class="container">
+            <a class="logo inverse" href=""><span class="accent">Web</span> Studio</a>
+            <address class="footer">
+                <p  >г. Киев, пр-т Леси Украинки, 26</p>
+                <a   class="contakts mail" href="mailto:info@example.com">info@example.com</a>
+                <a  class="contakts" href="tel:+380991111111">+38 099 111 11 11</a>
+            </address>
+       </div>
    </footer>
 </body>
 </html>
